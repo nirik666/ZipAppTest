@@ -5,7 +5,8 @@ document.addEventListener('deviceready', function(){
         cordova.file.dataDirectory + "test.zip",
         function(){
             window.alert("DL success");
-            zip.unzip(cordova.file.dataDirectory + "test.zip", cordova.file.dataDirectory, function(){
+            zip.unzip(cordova.file.dataDirectory + "test.zip", cordova.file.dataDirectory, function(res){
+                window.alert(res);
                 window.location.href = cordova.file.dataDirectory + "test/";
             });
         },
