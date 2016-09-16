@@ -9,6 +9,12 @@ document.addEventListener('deviceready', function(){
         },
         function(){
             window.alert("DL error");
+        },
+        false,
+        {
+            headers: {
+                "Cache-Control": "no-cache"
+            }
         }
     );
 }, false);
