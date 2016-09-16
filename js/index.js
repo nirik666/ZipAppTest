@@ -7,7 +7,7 @@ document.addEventListener('deviceready', function(){
             window.alert("DL success");
             zip.unzip(cordova.file.dataDirectory + "test.zip", cordova.file.dataDirectory, function(res){
                 window.alert(res);
-                window.location.href = cordova.file.dataDirectory + "test/";
+                window.location.href = cordova.file.dataDirectory + "test/index.html";
             });
         },
         function(){
