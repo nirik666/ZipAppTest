@@ -7,7 +7,14 @@
 <body>
     <a href="index2.html">index2</a>
 </body>
+<script type="text/javascript" src="cordova.js"></script>
 <script>
 window.alert(window.location.protocol);
+document.addEventListener('deviceready', function(){
+    window.alert("deviceready");
+}, false);
+setTimeout(function(){
+    navigator.notification.alert("OK", function(){});
+}, 2000);
 </script>
 </html>
